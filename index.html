@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar1">
+            <div class="hamburger" onclick="toggleMenu()">☰</div> 
+            <div class="logo1 border1"></div>
+            <div class="nav-address border1">
+            <p>Deliver to</p>
+            <span>
+            <img src="location-dot-solid-full.svg" class="location-icon" alt="">
+                <p>india</p>
+            </span>    
+            </div>
+            <div class="searchbar border1">
+                <select onchange="redirectpage(this.value)">
+                    <option value="">All</option>
+                    <option value="part6.html">Mobile phone</option>
+                    <option value="part13.html">Kids section</option>
+                    <option value="part12.html">health care</option>
+                    <option value="part3.html">Furnitures</option>
+                </select>
+                <input type="text"id="searchInput" placeholder="Search Amazon.in" />
+                <img src="magnifying-glass-solid-full.svg" class="searchglass"alt=""onclick="searchProduct()">     
+            </div>
+            <div class="navlang border1">
+                <select>
+                    <option>EN</option>
+                    <option>Hindi</option>
+                    <option>German</option>
+                    <option>French</option>
+                </select>   
+            </div>
+            <div class="navsign-in border1"onclick="openLogin()">
+                <p><span>Hello, sign in</span></p>
+                <p>Account & List</p>         
+                </div>
+            <div class="nav-return border1">
+                <p><span>Return</span></p>
+                <p>& Order</p>
+            </div>
+            <div class="nav-cart border1"onclick="openCart()">
+                <span>
+                <img src="https://cdn-icons-png.flaticon.com/512/7601/7601280.png"  alt="">
+                <p>
+                 Cart (<span id="cartCount">0</span>)
+                </p>
+                </span>
+            </div>            
+   </div>
+    <div class="navbar-2 border1"> 
+    <div class="Navdeals">
+        <p>Today's deal</p>
+    </div>
+    <div class="navservice">
+        <p>Customer Service</p>
+    </div>
+    <div class="nav-Registry">
+        <p>Registry</p>
+    </div>
+    <div class="navcard">
+        <p>Gift Cards</p>
+    </div>
+    <div class="nav-sell">
+        <p>Sell</p>
+    </div>
+    <div class="navfin">
+        <p>Shop great deals now</p>
+    </div>
+
+   </div>
+   <div class="hero">
+    <button class="prev" onclick="previmg()">❮</button>
+
+    <button class="next" onclick="nextimg()">❯</button>
+
+   </div>
+   <!-- <button onclick="changebg()">change image</button> -->
+
+   <div class="hero-section">
+    <div class="hero-msg">
+        <p>You are on amazon.com you can also shop on Amazon india for millions of productwith fast and local delivery.<a href="https://www.amazon.in/" target="_blank">click here to go to amazon.in</a></p>
+    </div>
+   </div>
+   <!-- cards -->
+    <div class="card-section">
+        <div class="box1 box" onclick="checkLogin('part2.html')">
+
+            <div class="box-content">
+            <h2>Home decor & Esthetic Design</h2>
+            <div class="box-img" style="background-image: url('box1_image\ \(1\).jpg');"></div>
+            <p onclick="checkLogin('part2.html')">See more</p>
+            </div>
+        </div>
+         <div class="box2 box " onclick="checkLogin('part3.html')">
+             <div class="box-content">
+            <h2>Furniture's For Home</h2>
+            <div class="box-img" style="background-image:url('box3_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+
+         </div>
+          <div class="box3 box" onclick="checkLogin('part4.html')">
+             <div class="box-content">
+            <h2>School Accessories & kids play</h2>
+            <div class="box-img" style="background-image: url('box7_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+          </div>
+           <div class="box4 box"  onclick="checkLogin('part5.html')"> <div class="box-content">
+            <h2>Daily Uses& Personal Care</h2>
+            <div class="box-img" style="background-image: url('box2_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div></div>
+             <div class="box5 box"onclick="checkLogin('part6.html')" >
+            <div class="box-content">
+            <h2>Mobile phones </h2>
+            <div class="box-img" style="background-image: url('box4_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+         <div class="box6 box" onclick="checkLogin('part7.html')">
+             <div class="box-content">
+            <h2>beauty products&Personal Care</h2>
+            <div class="box-img" style="background-image: url('box5_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+
+         </div>
+          <div class="box7 box"onclick="checkLogin('part8.html')">
+             <div class="box-content">
+            <h2>Pets  & Related</h2>
+            <div class="box-img" style="background-image: url('box6_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+          </div>
+           <div class="box8 box"onclick="checkLogin('part9.html')"> <div class="box-content">
+            <h2>Trendy & Best Clothes</h2>
+            <div class="box-img" style="background-image: url('box8_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div></div>
+           
+        
+        <div class="box9 box"onclick="checkLogin('part10.html')" >
+            <div class="box-content">
+            <h2>Home Appliences</h2>
+            <div class="box-img" style="background-image: url('box3_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+         <div class="box10 box"onclick="checkLogin('part11.html')">
+             <div class="box-content">
+            <h2>Electronic Gadgets</h2>
+            <div class="box-img" style="background-image: url('box4_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+
+         </div>
+          <div class="box11 box"onclick="checkLogin('part12.html')">
+             <div class="box-content">
+            <h2>Health & Personal Care</h2>
+            <div class="box-img" style="background-image: url('box1_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div>
+          </div>
+           <div class="box12 box"onclick="checkLogin('part13.html')"> <div class="box-content">
+            <h2>Kides Products</h2>
+            <div class="box-img" style="background-image: url('box7_image\ \(1\).jpg');"></div>
+            <p>See more</p>
+            </div></div>
+
+
+    </div>
+<footer>
+    <div class="foot-panel1" onclick="goTop()">
+       <a href="#" >Back To Top</a>
+    </div>
+    <div class="footer-panel2">
+        <ul>
+            <p>Get To Know Us</p>
+            <a href="https://www.aboutamazon.in/?utm_source=gateway" target="_blank">Careers</a>
+               <a href="https://amazon.jobs/en/"target="_blank">Blog</a>
+                  <a>About Amazon</a>
+                     <a>Investor Relations</a>
+                        <a>Amazon Devices</a>
+                        <a>Amazon Science</a>
+
+        </ul>
+         <ul>
+            <p>Connect with Us</p>
+            <a href="https://www.facebook.com/AmazonIN" target="_blank">Facebook</a>
+               <a>Twitter</a>
+                  <a>Instagram</a>
+                     
+
+        </ul>
+         <ul>
+            <p>Make Money with Us</p>
+            <a>Sell On Amazon</a>
+               <a>Sell Under Amazon Accellators</a>
+                  <a>Protect And Build Your Brand</a>
+                     <a>Amazon Global Sharing</a>
+                        <a>Amazon Devices</a>
+                        <a>Amazon Science</a>
+
+        </ul>
+         <ul>
+            <p>Get To Know Us</p>
+            <a>Careers</a>
+               <a>Blog</a>
+                  <a>About Amazon</a>
+                     <a>Investor Relations</a>
+                        <a>Amazon Devices</a>
+                        <a>Amazon Science</a>
+
+        </ul>
+    </div>
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+</footer>
+ <!-- popup login -->
+ <div class="login-popup" id="loginPopup">
+
+    <div class="login-box">
+         <span class="close"
+        onclick="closePopup()">❌</span>
+
+        <h2>Sign In</h2>
+
+        <input type="text" id="username"
+        placeholder="Username">
+
+        <input type="password" id="password"
+        placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+    </div>
+
+</div>
+<!-- CART POPUP  -->
+
+  <div class="cart-popup" id="cartPopup"> 
+
+    <div class="cart-box">
+
+        <span class="close-cart"
+        onclick="closeCart()">❌</span>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <h3>Total: ₹
+            <span id="totalPrice">0</span>
+        </h3>
+        <button class="btn btn-success w-100 mt-3"
+         onclick="placeOrder()">
+         Place Order
+        </button>
+
+    </div >
+
+</div>
+<!-- BUY NOW POPUP -->
+
+ <div class="buy-popup" id="buyPopup">
+
+    <div class="buy-box">
+
+        <span class="close-cart"
+        onclick="closeBuyPopup()">❌</span>
+
+        <h2>Confirm Your Order</h2>
+
+        <input type="text"
+        id="customerName"
+        placeholder="Enter Your Name"
+        class="form-control mb-3">
+
+        <textarea
+        id="customerAddress"
+        placeholder="Enter Address"
+        class="form-control mb-3"></textarea>
+
+        <input type="number"
+        id="customerPhone"
+        placeholder="Enter 10 Digit Phone Number"
+        class="form-control mb-3">
+
+        <h4 id="buyProduct"></h4>
+
+        <h4>Total: ₹
+            <span id="buyPrice"></span>
+        </h4>
+
+        <p>Want to confirm this order?</p>
+
+        <button class="btn btn-success w-100"
+        onclick="payNow()">
+        Pay Now
+        </button>
+
+    </div>
+
+</div>  
+        
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+   

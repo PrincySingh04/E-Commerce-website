@@ -1,0 +1,343 @@
+*{
+    margin:0px;
+    padding : 0px;
+    border:border-box;
+
+}
+.navbar1{
+    height: 60px;
+    background-color: rgb(16, 16, 35);
+    display:flex;
+    color:white;
+    gap: 18px;
+}
+
+.logo1{
+    background-image: url(amazon_logo\ \(1\).png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.border1:hover{
+    border : 1px solid white;
+    background-color: #0d45eb;
+    
+}
+.location-icon{
+    height: 20px;
+    background-color: antiquewhite;
+
+}
+span{
+    display :flex;
+    align-items:center;
+    
+    
+}
+ .searchbar {
+      display: flex;
+      height: 40px;
+      border-radius: 5px;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+    }
+    .searchbar input{
+    width:800px;
+    height:35px;
+    padding-left:10px;
+    border:none;}
+  .searchbar:hover{
+    border-color: 2px solid orange;
+    box-shadow:0 0 5px orange;
+  }  
+
+.searchbar select{
+    height:36px;
+    width: 60px;
+    border-right:1px solid gray;
+    padding-left:10px;
+    
+}
+.searchglass{
+    height:36px;
+    width:36px;
+    background-color:orange;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.searchglass img{
+    height:36px;
+    width:60px;
+}
+.navlang{
+    height:36px;
+    width:31px
+}
+.navlang select{
+    height: 36px;
+    width:40px
+}
+ span{
+    font-size: 0.7rem;
+
+}
+.navsign-in{
+    font-size: 1.2rem;
+}
+.nav-return{
+    font-size:1.2rem;
+}
+.nav-cart img{
+    
+    height:36px;
+    width:31px;
+    background-color: transparent;
+
+
+}
+.nav-cart{
+    position:relative;
+     position:relative;
+     display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-cart p{
+   position:static;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar-2{
+    height: 60px;
+    background-color: rgb(57, 57, 103);
+    display:flex;
+    color:white;
+    gap: 30px;
+}
+.navfin{
+    margin-left:auto;
+
+}
+/* .nav-all img{
+    height:36px;
+    width:31px;
+    
+}
+.all{
+    font-size: 17px;
+
+} */
+.alltext{
+    position:relative;
+    top:-8px;}
+p{
+    margin:0;
+}
+/* cards */
+.card{
+    transition:0.3s;
+    border:none;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px lightgray;
+}
+
+.card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#B12704;
+}
+/* add to car ka */
+.cart-popup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.5);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.cart-box{
+
+    background:white;
+
+    width:400px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    max-height:500px;
+
+    overflow:auto;
+}
+
+.close-cart{
+
+    cursor:pointer;
+
+    float:right;
+
+    font-size:20px;
+}
+
+.cart-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:15px 0;
+
+    border-bottom:1px solid gray;
+
+    padding-bottom:10px;
+}
+.card-body button{
+    margin-right:10px;
+    margin-top:10px;
+}
+.buy-popup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.5);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.buy-box{
+
+    background:white;
+
+    width:400px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 20px black;
+}
+
+.buy-box input,
+.buy-box textarea{
+
+    width:100%;
+}
+/* ruko */
+/* responsive promax */
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    
+    .searchbar {
+        display: flex !important;
+        order: 3;
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    
+    .nav-address,
+    .navlang,
+    .navsign-in,
+    .nav-return,
+    .nav-cart {
+    display: none;      
+    }
+    .navbar1.open .nav-address,
+    .navbar1.open .navlang,
+    .navbar1.open .navsign-in,
+    .navbar1.open .nav-return,
+    .navbar1.open .nav-cart {
+        display: flex;
+        width: 100%;
+        padding: 8px 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    padding: 0 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .navbar1 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 12px;
+        gap: 10px;
+    }
+    .searchbar {
+        order: 3;
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .searchbar input { width: 100%; }
+    .navbar-2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 12px;
+        gap: 12px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar1.open {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-2 {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        height: auto;
+        padding: 8px 10px;
+        gap: 15px;
+        font-size: 0.78rem;
+    }
+    .navbar-2::-webkit-scrollbar { display: none; }
+    .cart-box, .buy-box { width: 90%; padding: 15px; }
+}

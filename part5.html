@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="part2.css">
+  </head>
+  <body>
+     <div class="navbar1">
+        
+            <div class="logo1 border1"onclick="toggleMenu()">☰</div>
+
+            <div class="nav-address border1">
+            <p>Deliver to</p>
+            <span>
+            <img src="location-dot-solid-full.svg" class="location-icon" alt="">
+                <p>india</p>
+            </span>    
+            </div>
+
+            <div class="searchbar border1">
+                <select onchange="redirectpage(this.value)">
+                    <option value="">All</option>
+                    <option value="https://www.amazon.in/s?k=electronics&crid=2D4PP1D7A5PZ">Electronics</option>
+                    <option value="https://www.amazon.in/s?k=food&crid=LET7V2U020FR">food-items</option>
+                    <option value="https://www.amazon.in/s?k=clothes&crid=3LAL1RIZZ8KFS">clothes</option>
+                    <option value="https://www.amazon.in/s?k=grocery+items+all">Groceries</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in" />
+                <img src="magnifying-glass-solid-full.svg" class="searchglass"alt="">
+                
+                
+            </div>
+            <div class="navlang border1">
+                <select>
+                    <option>EN</option>
+                    <option>Hindi</option>
+                    <option>German</option>
+                    <option>French</option>
+                </select>
+                
+            </div>
+
+            <div class="navsign-in border1"onclick="openLogin()">
+                <p><span>Hello, sign in</span></p>
+                <p>Account & List</p>
+                       
+                </div>
+            
+
+            <div class="nav-return border1">
+                <p><span>Return</span></p>
+                <p>& Order</p>
+            </div>
+            <div class="nav-cart border1"onclick="openLogin()">
+                <span>
+                <img src="https://cdn-icons-png.flaticon.com/512/7601/7601280.png"  alt="">
+                 <p>
+                  Cart (<span id="cartCount">0</span>)
+                 </p>
+                </span>
+            </div>
+              
+   </div>
+   <div class="navbar-2 border1">
+    <!-- <div class="nav-all">
+        <span class="all">
+        <img src="interface_15059399.png" alt="">
+        <p class="alltext">All</p>
+        </span>
+    </div> -->
+    <div class="Navdeals">
+        <p>Today's deal</p>
+    </div>
+    <div class="navservice">
+        <p>Customer Service</p>
+    </div>
+    <div class="nav-Registry">
+        <p>Registry</p>
+    </div>
+    <div class="navcard">
+        <p>Gift Cards</p>
+    </div>
+    <div class="nav-sell">
+        <p>Sell</p>
+    </div>
+    <div class="navfin">
+        <p>Shop great deals now</p>
+    </div>
+
+   </div>
+  <!-- cards -->
+   <div class="container mt-4">
+
+    <h2 class="mb-4">Best Sellers</h2>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71775fRr+gL._SL1500_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹299</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/41DkGunvnWL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/411WAFGejwL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/5169wKCIDWL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/41gM-MmMCqL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/51k+uVgU2cL._SL1000_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/613oZDzaxBL._SL1500_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61+gUgyuZpL._SL1080_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/41V4O20zKYL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/51ICSU-0bQL._SL1000_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/31ICMrKL4NL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/31fjxrBUYnL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Bedsheet</h5>
+
+                    <p class="price">₹499</p>
+
+                    <button class="btn btn-warning"onclick="addToCart('Bedsheet',499)">
+                        Add to Cart
+                    </button>
+                     <button class="btn btn-dark"
+                     onclick="buyNow('Bedsheet',299)">
+                     Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="cart-popup" id="cartPopup">
+
+    <div class="cart-box">
+
+        <span class="close-cart"
+        onclick="closeCart()">❌</span>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <h3>Total: ₹
+            <span id="totalPrice">0</span>
+        </h3>
+        <button class="btn btn-success w-100 mt-3"
+         onclick="placeOrder()">
+         Place Order
+        </button>
+
+    </div>
+
+</div>
+<!-- BUY NOW POPUP -->
+
+<div class="buy-popup" id="buyPopup">
+
+    <div class="buy-box">
+
+        <span class="close-cart"
+        onclick="closeBuyPopup()">❌</span>
+
+        <h2>Confirm Your Order</h2>
+
+        <input type="text"
+        id="customerName"
+        placeholder="Enter Your Name"
+        class="form-control mb-3">
+
+        <textarea
+        id="customerAddress"
+        placeholder="Enter Address"
+        class="form-control mb-3"></textarea>
+
+        <input type="number"
+        id="customerPhone"
+        placeholder="Enter 10 Digit Phone Number"
+        class="form-control mb-3">
+
+        <h4 id="buyProduct"></h4>
+
+        <h4>Total: ₹
+            <span id="buyPrice"></span>
+        </h4>
+
+        <p>Want to confirm this order?</p>
+
+        <button class="btn btn-success w-100"
+        onclick="payNow()">
+        Pay Now
+        </button>
+
+    </div>
+
+</div>
+       
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+   
