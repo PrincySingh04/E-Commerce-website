@@ -17,6 +17,7 @@ The goal of this project was to strengthen frontend development skills by implem
 ## 🛍️ Shopping Features
 
 * Add to Cart Functionality
+* direct purchase
 * Dynamic Cart Popup
 * Cart Quantity Management
 * Real-Time Total Price Calculation
@@ -131,7 +132,7 @@ Through this project, I gained practical experience in:
 
 **Princy Singh**
 
-Frontend Developer | Engineering Student
+Fullstack Developer | Engineering Student
 
 This project was created as part of my frontend development learning journey to practice HTML, CSS, JavaScript, responsive design, and real-world e-commerce website development.
 
